@@ -1,0 +1,122 @@
+body{
+    background: grey;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+.planet{
+    display: block;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background: purple;
+    border-radius: 50%;
+    transition: 0.7s;
+    position: absolute;
+}
+.planet > h1{
+    margin: 0;
+    transform: scale(1, 1);
+}
+#planet1{
+    left: 2%;
+    z-index: -100;
+    transform: scale(1.5, 1.5);
+}
+#planet2{
+    left: 10%;
+    z-index: -2;
+    transform: scale(2, 2);
+}
+#planet3{
+    left: 21%;
+    z-index: -3;
+    transform: scale(3, 3);
+}
+#planet4{
+    left: 35%;
+    z-index: -4;
+    transform: scale(3.5, 3.5);
+}
+#planet5{
+    left: 50%;
+    z-index: -5;
+    transform: scale(4, 4);
+}
+#planet6{
+    left: 65%;
+    z-index: -6;
+    transform: scale(3.5, 3.5);
+}
+#planet7{
+    left: 79%;
+    z-index: -7;
+    transform: scale(3, 3);
+}
+#planet8{
+    left: 90%;
+    z-index: -800;
+    transform: scale(2, 2);
+}
+#left{
+    position: absolute;
+    top: 20%;;
+    left: 0;
+}
+#right{
+    position: absolute;
+    top: 20%;;
+    right: 0;
+}
+@media only screen and (max-width: 1200px) {
+    #planet1{
+        left: 2%;
+        z-index: -100;
+        transform: scale(1, 1);
+    }
+    #planet2{
+        left: 10%;
+        z-index: -2;
+        transform: scale(1.25, 1.25);
+    }
+    #planet3{
+        left: 21%;
+        z-index: -3;
+        transform: scale(1.5, 1.5);
+    }
+    #planet4{
+        left: 35%;
+        z-index: -4;
+        transform: scale(1.75, 1.75);
+    }
+    #planet5{
+        left: 50%;
+        z-index: -5;
+        transform: scale(2, 2);
+    }
+    #planet6{
+        left: 65%;
+        z-index: -6;
+        transform: scale(1.75, 1.75);
+    }
+    #planet7{
+        left: 79%;
+        z-index: -7;
+        transform: scale(1.5, 1.5);
+    }
+    #planet8{
+        left: 90%;
+        z-index: -800;
+        transform: scale(1.25, 1.25);
+    }
+}
